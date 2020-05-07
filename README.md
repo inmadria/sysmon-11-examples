@@ -1,4 +1,6 @@
 # Structure reference for Microsoft Sysinternals Sysmon v11.0
+
+## Context
 Download link and official documentation: <https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon>
 
 All these events examples have been recorded in a Windows domain lab built thanks to the GitHub project [Windows Domain Controller Vagrant](https://github.com/rgl/windows-domain-controller-vagrant)
@@ -28,7 +30,33 @@ We also used a custom "log-all-the-things" Sysmon configuration.
 </Sysmon>
 ```
 
-[Olaf Hartong](https://github.com/olafhartong) published the [sysmon-11-schema.xml](https://gist.github.com/olafhartong/ad8780b031e024d9394014b2e90f32c9) (obtained with `.\Sysmon64.exe -s`)
+[Olaf Hartong](https://github.com/olafhartong) published the [sysmon-11-schema.xml](https://gist.github.com/olafhartong/ad8780b031e024d9394014b2e90f32c9) (dumped with `.\Sysmon64.exe -s`)
+
+
+## Events
+- [Event ID 1: Process creation](#event-id-1-process-creation)
+- [Event ID 2: A process changed a file creation time](#event-id-2-a-process-changed-a-file-creation-time)
+- [Event ID 3: Network connection](#event-id-3-network-connection)
+- [Event ID 4: Sysmon service state changed](#event-id-4-sysmon-service-state-changed)
+- [Event ID 5: Process terminated](#event-id-5-process-terminated)
+- [Event ID 6: Driver loaded](#event-id-6-driver-loaded)
+- [Event ID 7: Image loaded](#event-id-7-image-loaded)
+- [Event ID 8: CreateRemoteThread](#event-id-8-createremotethread)
+- [Event ID 9: RawAccessRead](#event-id-9-rawaccessread)
+- [Event ID 10: ProcessAccess](#event-id-10-processaccess)
+- [Event ID 11: FileCreate](#event-id-11-filecreate)
+- [Event ID 12: RegistryEvent (Object create and delete)](#event-id-12-registryevent-object-create-and-delete)
+- [Event ID 13: RegistryEvent (Value Set)](#event-id-13-registryevent-value-set)
+- [Event ID 14: RegistryEvent (Key and Value Rename)](#event-id-14-registryevent-key-and-value-rename)
+- [Event ID 15: FileCreateStreamHash](#event-id-15-filecreatestreamhash)
+- [Event ID 16: Sysmon config state changed](#event-id-16-sysmon-config-state-changed)
+- [Event ID 17: PipeEvent (Pipe Created)](#event-id-17-pipeevent-pipe-created)
+- [Event ID 18: PipeEvent (Pipe Connected)](#event-id-18-pipeevent-pipe-connected)
+- [Event ID 19: WmiEvent (WmiEventFilter activity detected)](#event-id-19-wmievent-wmieventfilter-activity-detected)
+- [Event ID 20: WmiEvent (WmiEventConsumer activity detected)](#event-id-20-wmievent-wmieventconsumer-activity-detected)
+- [Event ID 21: WmiEvent (WmiEventConsumerToFilter activity detected)](#event-id-21-wmievent-wmieventconsumertofilter-activity-detected)
+- [Event ID 22: DNSEvent (DNS query)](#event-id-22-dnsevent-dns-query)
+- [Event ID 23: FileDelete (A file delete was detected)](#event-id-23-filedelete-a-file-delete-was-detected)
 
 
 ### Event ID 1: Process creation
