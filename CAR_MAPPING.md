@@ -11,6 +11,17 @@ Microsoft Sysinternals Sysmon is one of these sensors. We mapped its attributes 
 Please note that we only mapped fields that are present in logs without needing any transformation. For example, the field `fqdn` is present as `Computer` but the field `hostname` could be extracted from this value. Same thing for `file_name`, `exe`, `hive`, *etc*. Thus we provide for each event type a table of "Fields that require a transformation".
 
 ## Events mapping
+- [Event ID 1: Process creation](#event-id-1-process-creation)
+- [Event ID 2: A process changed a file creation time](#event-id-2-a-process-changed-a-file-creation-time)
+- [Event ID 3: Network connection](#event-id-3-network-connection)
+- [Event ID 5: Process terminated](#event-id-5-process-terminated)
+- [Event ID 6: Driver loaded](#event-id-6-driver-loaded)
+- [Event ID 7: Image loaded](#event-id-7-image-loaded)
+- [Event ID 8: CreateRemoteThread](#event-id-8-createremotethread)
+- [Event ID 11: FileCreate](#event-id-11-filecreate)
+- [Event ID 12: RegistryEvent (Object create and delete)](#event-id-12-registryevent-object-create-and-delete)
+- [Event ID 13: RegistryEvent (Value Set)](#event-id-13-registryevent-value-set)
+- [Event ID 23: FileDelete (A file delete was detected)](#event-id-23-filedelete-a-file-delete-was-detected)
 
 ### Event ID 1: Process creation
 #### CAR `process create`
