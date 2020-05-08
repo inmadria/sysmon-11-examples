@@ -8,7 +8,7 @@
 
 Microsoft Sysinternals Sysmon is one of these sensors. We mapped its attributes with those of CAR data model.
 
-Please note that we only mapped fields that are present in logs without needing any transformation. For example, the field `fqdn` is present as `Computer` but the field `hostname` could be extracted from this value. Same thing for `file_name`, `exe`, `hive`, *etc*. Thus we provide for each event type a table of "Fields that require a transformation".
+Please note that we only mapped fields that are present in logs without needing any transformation. For example, the field `fqdn` is present as `Computer` but the field `hostname` could be extracted from this value. Same thing for `file_name`, `exe`, `hive`, *etc*. Thus we provide for each event type a table of "Fields requiring transformation".
 
 ## Events mapping
 - [Event ID 1: Process creation](#event-id-1-process-creation)
@@ -42,7 +42,7 @@ Please note that we only mapped fields that are present in logs without needing 
 |Hashes|sha1_hash|Extract SHA1|
 |Hashes|sha256_hash|Extract SHA256|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Image|exe|Extract basename|
@@ -61,7 +61,7 @@ Fields that require a transformation
 |ProcessId|pid|
 |PreviousCreationUtcTime|previous_creation_time|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
@@ -85,7 +85,7 @@ Fields that require a transformation
 |SourceHostname|src_fqdn|
 |DestinationHostname|dest_fqdn|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Image|exe|Extract basename|
@@ -102,7 +102,7 @@ Fields that require a transformation
 |Image|image_path|
 |ProcessId|pid|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Image|exe|Extract basename|
@@ -120,7 +120,7 @@ Fields that require a transformation
 |Hashes|sha1_hash|Extract SHA1|
 |Hashes|sha256_hash|Extract SHA256|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
@@ -139,7 +139,7 @@ Fields that require a transformation
 |Hashes|sha1_hash|Extract SHA1|
 |Hashes|sha256_hash|Extract SHA256|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
@@ -157,7 +157,7 @@ Fields that require a transformation
 |StartFunction|start_function|
 |StartModule|start_module|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
@@ -174,7 +174,7 @@ Fields that require a transformation
 |Image|image_path|
 |ProcessId|pid|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
@@ -190,7 +190,7 @@ Fields that require a transformation
 |ProcessId|pid|
 |TargetObject|key|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
@@ -207,7 +207,7 @@ Fields that require a transformation
 |ProcessId|pid|
 |TargetObject|key|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
@@ -228,7 +228,7 @@ Fields that require a transformation
 |Hashes|sha1_hash|Extract SHA1|
 |Hashes|sha256_hash|Extract SHA256|
 
-Fields that require a transformation
+Fields requiring transformation
 |Sysmon|CAR|Transformation|
 |---|---|---|
 |Computer|hostname|Extract computer name|
