@@ -1,3 +1,17 @@
+# Sysmon 11 events mapping with CAR Data Model
+
+## Context
+[CAR (Cyber Analytics Repository)](https://github.com/mitre-attack/car) provides to *Threat Hunters* a generic model useful for investigations. It is composed of:
+- **Analytics** (detection rules)
+- **Data Model** (atomic elements formalization) 
+- **Sensors** (tools that logs these elements)
+
+Microsoft Sysinternals Sysmon is one of these sensors. We mapped its attributes with those of CAR data model.
+
+Please note that we only mapped fields that are present in logs without needing any transformation. For example, the field `fqdn` is present as `Computer` but the field `hostname` could be extracted from this value. Same thing for `file_name`, `exe`, `hive`, *etc*. Thus we provide for each event type a table of "Fields that require a transformation".
+
+## Events mapping
+
 ### Event ID 1: Process creation
 #### CAR `process create`
 |Sysmon|CAR|
